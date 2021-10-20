@@ -39,3 +39,12 @@ window.addEventListener(
   }, 300)
 );
 // _.throttle(함수, 시간(ms))
+
+const fadeEls = document.querySelectorAll(".visual .fade-in");
+fadeEls.forEach(function (fadeEl, index) {
+  // gsap.to(요소, 지속시간, 옵션);
+  gsap.to(fadeEl, 1, {
+    delay: (index + 1) * 0.7, // 0.7초, 1.4초 --- 이런식으로 실행
+    opacity: 1,
+  });
+});
