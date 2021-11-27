@@ -58,6 +58,7 @@ window.addEventListener(
     }
   }, 300)
 );
+
 // 상단으로 스크롤 버튼을 클릭하면,
 toTopEl.addEventListener("click", function () {
   // 페이지 위치를 최상단으로 부드럽게(0.7초 동안) 이동
@@ -79,7 +80,6 @@ fadeEls.forEach(function (fadeEl, index) {
 });
 
 // ----- 슬라이드 요소 관리
-
 new Swiper(".notice-line .swiper-container", {
   direction: "vertical", // 수직 슬라이드
   autoplay: true, // 자동 재생 여부
